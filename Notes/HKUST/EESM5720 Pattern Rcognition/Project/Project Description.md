@@ -142,7 +142,7 @@ Comparing the two graphs, the training loss continues to decrease during the tra
 #### 3.2.3 Solution
 
 In order to solve the overfitting problem, I implemented  preprocessing procedures as discussed before to create more different samples further to expand the dataset. Here is the loss graph of `CNNv0.2`:
-![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082052211.png)![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082052637.png)
+![|330](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082052211.png)![|330](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082052637.png)
 <center style="color:#C0C0C0;text-decoration:underline">CNNv0.2: training loss(left) and validation loss(right) </center>
 Comparing the two graphs, they both decrease during training time and the validation loss does not rebound as the situation in `CNNv0.1`.  The overfitting problem is solved. Further, if we want train more epochs to make the model better, we will encounter overfitting problem, because the number of data is finite, there will be a certain time that the model can “learn” all the data just well. After that moment, overfitting shows up. So we need to design our datasets, model, training scheme properly.
 
@@ -158,7 +158,7 @@ When training a neural network, use the learning rate to adjust the speed of par
 - In `CNNv0.3`, I added a scheduler `optim.lr_scheduler.MultiStepLR(optimizer, milestones=[60, 80], gamma=0.1)`. The scheduler will make a 10-fold decrease of the present learning rate when the number of epoch reaching 60 and 80. Because when I trained `CNNv0.2`, I noticed the validation loss is fluctuating after epoch 60.
 
 #### 3.3.2 Performance
-![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082053732.png)![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082053516.png)
+![|330](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082053732.png)![|330](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082053516.png)
 <center style="color:#C0C0C0;text-decoration:underline">validation loss in CNNv0.2(left) and CNNv0.3(right)</center>
 
 From the two graphs, there is a obvious decrease after adjusting the learning rate at 60 epochs and the curve is suddenly becoming more smoother than `CNNv0.2`. In `CNNv0.2`,  the validation loss begins to fluctuate around 0.23 after 60 epochs. While in `CNNv0.3`, smaller learning rate further enhance the performance of the model with validation loss at 0.21 eventually.
@@ -192,7 +192,7 @@ The main modules of the current deep learning network structure are convolution,
 
 
 #### 3.4.3 Performance
-![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082054369.png)![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082054689.png)
+![|330](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082054369.png)![|330](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082054689.png)
 
 <center style="color:#C0C0C0;text-decoration:underline">validation loss in CNNv0.3(left) and CNNv0.4(right)</center>
 
@@ -210,3 +210,6 @@ We need to match the right model complexity according to the data complexity to 
 1. Bengio Y, LeCun Y. Scaling learning algorithms towards AI[J]. Large-scale kernel machines, 2007, 34(5): 1-41.
 1. [H Xiao](https://scholar.google.com/citations?user=jp7swwIAAAAJ&hl=en&oi=sra), [K Rasul](https://scholar.google.com/citations?user=cfIrwmAAAAAJ&hl=en&oi=sra), [R Vollgraf](https://scholar.google.com/citations?user=w8qPxSUAAAAJ&hl=en&oi=sra) - arXiv preprint arXiv:1708.07747, 2017 - arxiv.org
 1. The MIT License (MIT) Copyright © [2017] Zalando SE, [https://tech.zalando.com](https://tech.zalando.com/)
+<center class="half"> 
+	<img src="https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082116580.png" width="300"/><img src="https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082116545.png" width="300"/>
+</center>
