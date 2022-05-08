@@ -135,15 +135,14 @@ Overfitting is when the gap between training error and test error is too large. 
 #### 3.2.2 Experiment
 
 During the training process of `CNNv0.1`, here is a overfitting situation as showed below: 
-![|330](https://raw.githubusercontent.com/Bennie13/Cloud-Image/main/Obsidian/image-20220504143917832.png)![|330](https://raw.githubusercontent.com/Bennie13/Cloud-Image/main/Obsidian/202205081939670.png)
+![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082048640.png)![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082048917.png)
 <center style="color:#C0C0C0;text-decoration:underline">CNNv0.1: training loss(left) and validation loss(right) </center>
 Comparing the two graphs, the training loss continues to decrease during the training time, while the validation loss decreases fast initially and begins to rebound after 40 epochs. Obviously, this is a overfitting problem.
 
 #### 3.2.3 Solution
 
 In order to solve the overfitting problem, I implemented  preprocessing procedures as discussed before to create more different samples further to expand the dataset. Here is the loss graph of `CNNv0.2`:
-
-![|330](https://raw.githubusercontent.com/Bennie13/Cloud-Image/main/Obsidian/%E6%88%AA%E5%B1%8F2022-05-04%2000.14.40.png)![|330](https://raw.githubusercontent.com/Bennie13/Cloud-Image/main/Obsidian/%E6%88%AA%E5%B1%8F2022-05-04%2000.15.03.png)
+![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082052211.png)![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082052637.png)
 <center style="color:#C0C0C0;text-decoration:underline">CNNv0.2: training loss(left) and validation loss(right) </center>
 Comparing the two graphs, they both decrease during training time and the validation loss does not rebound as the situation in `CNNv0.1`.  The overfitting problem is solved. Further, if we want train more epochs to make the model better, we will encounter overfitting problem, because the number of data is finite, there will be a certain time that the model can “learn” all the data just well. After that moment, overfitting shows up. So we need to design our datasets, model, training scheme properly.
 
@@ -159,9 +158,7 @@ When training a neural network, use the learning rate to adjust the speed of par
 - In `CNNv0.3`, I added a scheduler `optim.lr_scheduler.MultiStepLR(optimizer, milestones=[60, 80], gamma=0.1)`. The scheduler will make a 10-fold decrease of the present learning rate when the number of epoch reaching 60 and 80. Because when I trained `CNNv0.2`, I noticed the validation loss is fluctuating after epoch 60.
 
 #### 3.3.2 Performance
-![|330](https://raw.githubusercontent.com/Bennie13/Cloud-Image/main/Obsidian/with_lrdecay-1638860.png)![|330](https://raw.githubusercontent.com/Bennie13/Cloud-Image/main/Obsidian/without_lrdecay%20-1638818.png)
-
-
+![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082053732.png)![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082053516.png)
 <center style="color:#C0C0C0;text-decoration:underline">validation loss in CNNv0.2(left) and CNNv0.3(right)</center>
 
 From the two graphs, there is a obvious decrease after adjusting the learning rate at 60 epochs and the curve is suddenly becoming more smoother than `CNNv0.2`. In `CNNv0.2`,  the validation loss begins to fluctuate around 0.23 after 60 epochs. While in `CNNv0.3`, smaller learning rate further enhance the performance of the model with validation loss at 0.21 eventually.
@@ -189,14 +186,14 @@ The main modules of the current deep learning network structure are convolution,
 #### 3.4.2 Experiment
 
 - In `CNNv0.3`, I use `conv layer + pooling layer` as a block. In total, there 2 blocks and eventually connected to 2 FC layer.(input is blue, conv is green, pooling is yellow, red is fully connected)
-![](https://raw.githubusercontent.com/Bennie13/Cloud-Image/main/Obsidian/%E6%88%AA%E5%B1%8F2022-05-04%2023.24.48.png)
-
+![](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082116545.png)
 - In `CNNv0.4`, I take `VGG` network as reference, which is designed to prove that increasing the depth of the network can affect the final performance of the network to a certain extent. I only use the first 2 stages of `VGG`, I use ` 2 conv layer + batchnorm + pooling layer` as a block. In total, there 2 blocks and eventually connected to 2 FC layer
-![](https://raw.githubusercontent.com/Bennie13/Cloud-Image/main/Obsidian/%E6%88%AA%E5%B1%8F2022-05-04%2023.28.25.png)
+![](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082116580.png)
 
 
 #### 3.4.3 Performance
-![|330](https://raw.githubusercontent.com/Bennie13/Cloud-Image/main/Obsidian/without_lrdecay%20-1638818.png)![|330](https://raw.githubusercontent.com/Bennie13/Cloud-Image/main/Obsidian/%E6%88%AA%E5%B1%8F2022-05-06%2000.11.01.png)
+![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082054369.png)![|310](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082054689.png)
+
 <center style="color:#C0C0C0;text-decoration:underline">validation loss in CNNv0.3(left) and CNNv0.4(right)</center>
 
 |                                 | Test Loss  | Test Accuracy |
