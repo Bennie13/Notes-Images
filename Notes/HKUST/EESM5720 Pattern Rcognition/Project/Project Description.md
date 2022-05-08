@@ -211,5 +211,6 @@ We need to match the right model complexity according to the data complexity to 
 1. [H Xiao](https://scholar.google.com/citations?user=jp7swwIAAAAJ&hl=en&oi=sra), [K Rasul](https://scholar.google.com/citations?user=cfIrwmAAAAAJ&hl=en&oi=sra), [R Vollgraf](https://scholar.google.com/citations?user=w8qPxSUAAAAJ&hl=en&oi=sra) - arXiv preprint arXiv:1708.07747, 2017 - arxiv.org
 1. The MIT License (MIT) Copyright © [2017] Zalando SE, [https://tech.zalando.com](https://tech.zalando.com/)
 <center class="half"> 
-	<img src="https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082116580.png" width="200"/><img src="https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082116545.png" width="200"/>
+<img src="https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082116580.png" width="200"/><img src="https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082116545.png" width="200"/>
 </center>
+<img src="https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082116580.png" width="200"/><img src="https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082116545.png" width="200"/>
