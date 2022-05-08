@@ -197,7 +197,8 @@ The main modules of the current deep learning network structure are convolution,
 
 
 #### 3.4.3 Performance
-![|200](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082054369.png)![|200](https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082054689.png)
+<img src="https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082054369.png" style="width:50%;"/><img src="https://raw.githubusercontent.com/Bennie13/Notes-Images/main/Images/202205082054689.png" style="width:50%;"/>
+<center style="color:#C0C0C0;text-decoration:underline">validation loss in CNNv0.2(left) and CNNv0.3(right)</center>
 
 <center style="color:#C0C0C0;text-decoration:underline">validation loss in CNNv0.3(left) and CNNv0.4(right)</center>
 
