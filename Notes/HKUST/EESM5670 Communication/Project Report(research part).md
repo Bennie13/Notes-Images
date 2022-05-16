@@ -1,13 +1,11 @@
-Group representative (i.e., the member with the smallest student ID) should submit the 20+ page project report (in .docx or .pdf) for their group here (other group members do not need to submit). Please name the file using the format **group no.-representative name-representative ID, e.g., 00-Xuanyu-12345678**. Please also remember to provide the name and student ID of your group members on the cover page of your report.
 
-The submission deadline is **13th May at 11: 59 pm**.
-
+# Cloud Computing
+Author:
+- JIN, Bowen 20796057
+- WANG, Zongwei 20811924
+- Xie, Peihong 20789846
 ```toc
 ```
-# Cloud Computing
-> XIE, Peihong
-> WANG, Zongwei
-> JIN, Bowen
 ## 1. Inrtoduction
 ### 1.1 Why data matters
 If we look at the past and present of computers, we can see how quickly they have evolved, In 1981 Bill Gates said, "640K ought to be enough for anybody." Something unthinkable today. Today everyone produces far more data every day. Today, we're all surrounded by an infinite amount of data, and while the amount of data being created globally hasn't stopped, a Large Hadron Collider generates 40 TB data per second and Boeing Jet Engine creats 10TB operation information every 30 minutes, further, the search index data of google contains 100s billions webpages and is well over 100 petabytes in size.If we look into the whole Internet, it is predicted that the total volume of data or information created, captured, copied, adn consumed worldwide by 2025 will reach 181 zettabytes.
@@ -31,7 +29,8 @@ It is estimated that over 94% global workloads was processed indatacenters in 20
 ![](https://cdn.jsdelivr.net/gh/Bennie13/Notes-Images@main/Images/202205132122778.png)
  <center style="color:#C0C0C0;text-decoration:underline">Cooling Infrastructure</center>
  
-![](https://cdn.jsdelivr.net/gh/Bennie13/Notes-Images@main/Images/202205132206926.png)
+![](https://cdn.jsdelivr.net/gh/Bennie13/Notes-Images@main/Images/202205132232419.png)
+
 
 ![](https://cdn.jsdelivr.net/gh/Bennie13/Notes-Images@main/Images/202205132123023.png)
  <center style="color:#C0C0C0;text-decoration:underline">Power Infrastructure</center>
@@ -85,6 +84,7 @@ So, what services can a cloud provide? There are several service models includin
 - Finally, is cloud applications which is basically used everyday in our dailylife.
 
 #### 1.5.2 cloud service model
+
 ##### 1.5.2.1 Infrastructure-as-a-Service(Iaas)
 - Providers give you the computing infrastructure made available as a service. You get “bare-metal” machines.
 - Providers manage a large pool of resources, and use virtualization to dynamically allocate
@@ -134,9 +134,11 @@ The global cloud computing market reached a new high of $406 billion in 2021 and
   
 
 According to T4AI, while SaaS still dominates the cloud computing market, private clouds are also growing at a very fast pace from 2018 to 2021. While private clouds held a market share of just 32 billion dollars in 2018, this figure has grown rapidly to 10 billion dollars in 2021, making it the second largest market component after SaaS. According to forecasts, the private cloud market share will continue to grow at a much higher rate than other market components in the future. By 2024, the private cloud will reach a market share of $18.6 billion, officially overtaking SaaS as a major part of the cloud computing market.
-![](https://cdn.jsdelivr.net/gh/Bennie13/Notes-Images@main/Images/202205132208202.png)
+![](https://cdn.jsdelivr.net/gh/Bennie13/Notes-Images@main/Images/202205132232369.png)
+
 With the global cloud computing market at record highs, the market penetration rate of the cloud computing market has also been increasing. According to iiMedia Research, the global penetration rate of global SaaS applications is 36%, up 12% from 2019. iiMedia analysts believe that the emergence and continuation of the new crown pneumonia epidemic has shortened the market SaaS application cycle, increased the penetration rate of SaaS applications in areas such as telecommuting and online education, and accelerated SaaS development.
-![](https://cdn.jsdelivr.net/gh/Bennie13/Notes-Images@main/Images/202205132208181.png)
+![](https://cdn.jsdelivr.net/gh/Bennie13/Notes-Images@main/Images/202205132231224.png)
+
 From the perspective of global enterprise cloud strategy distribution, hybrid cloud has become the mainstream within the cloud computing industry. 2020, global enterprises are more focused on the layout of the hybrid cloud field, the layout of enterprises up to 87%; enterprises no longer layout the private cloud field, the layout of enterprises only 1%. According to the analysts of Ai Media Consulting, the business boundaries of traditional enterprises and Internet enterprises are broken at the same time, the close relationship between traditional enterprises and private clouds, Internet enterprises and public clouds is also broken, and hybrid clouds have become a major trend. Traditional enterprises, in the process of exploring innovative businesses such as "Internet+", need public clouds to carry their business development. Therefore, while traditional enterprises use private clouds, they also need to use public clouds to develop new businesses. On the other hand, Internet enterprises use public cloud resources to cope with peak load business and also use private clouds to maintain a continuous workload.
 ### 2.2 Industry chain promotes cloud computing development
 According to the whole industry chain of cloud computing industry, all parts can be divided into industry upstream, industry midstream and industry downstream. The upstream of cloud computing industry is divided into chip suppliers and infrastructure equipment suppliers. Chip vendors include the common Intel, Nvidia and other well-known chip vendors. And the infrastructure equipment suppliers include Huawei, Cisco and other communication equipment suppliers. In the domestic cloud computing industry, FiberHome and ZTE are also very important infrastructure equipment suppliers.
